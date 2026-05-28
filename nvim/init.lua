@@ -57,20 +57,20 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Half page down" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Half page up" })
 
 -- Window navigation
-vim.keymap.set("n", "<C-h>", "<C-w>h")
-vim.keymap.set("n", "<C-j>", "<C-w>j")
-vim.keymap.set("n", "<C-k>", "<C-w>k")
-vim.keymap.set("n", "<C-l>", "<C-w>l")
+vim.keymap.set("n", "<C-H>", "<C-w>h")
+vim.keymap.set("n", "<C-J>", "<C-w>j")
+vim.keymap.set("n", "<C-K>", "<C-w>k")
+vim.keymap.set("n", "<C-L>", "<C-w>l")
 
 -- Indenting keeps selection
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
 -- Move lines
-vim.keymap.set("n", "<A-j>", ":m .+1<CR>==")
-vim.keymap.set("n", "<A-k>", ":m .-2<CR>==")
-vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
-vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv")
+vim.keymap.set("n", "<C-j>", ":m .+1<CR>==")
+vim.keymap.set("n", "<C-k>", ":m .-2<CR>==")
+vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
 
 -- Diagnostics
 vim.keymap.set("n", "<leader>d", function()
